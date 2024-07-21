@@ -1,0 +1,78 @@
+*{
+    margin: auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Styling the Title and giving
+shadow to the title */
+#title {
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(0, 6, 39);
+    font-size: 7vh;
+}
+
+/* Setting width and display
+type of image */
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Setting font color and font
+size of the image-caption */
+#caption {
+    font-size: 17px;
+    font-family: Gill Sans;
+    color: black;
+}
+
+/* Styling the content of the page like-
+padding, font-size, font color etc.*/
+div#tribute-data {
+    background-color: rgb(46, 139, 87, 0.25);
+    box-shadow: 
+                10px 0 15px rgba(0, 0, 0, 0.3),  /* Shadow on positive x-axis */
+                -10px 0 15px rgba(0, 0, 0, 0.3); /* Shadow on negative x-axis */
+    
+    
+    font-family: Georgia;
+    padding: 25px 25px;
+    margin: 11px;
+    margin-top: 50px;
+}
+
+/* Styling the title of the content */
+h1.title-APJ {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+}
+
+/* Styling the link provided at the end */
+#tribute-link {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper{
+    /* The image used */
+    background-image: url("https://m.media-amazon.com/images/I/91RcNFJDSFL._AC_UF1000,1000_QL80_.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+.container{
+    background-color: gray;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}

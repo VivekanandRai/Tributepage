@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: peachpuff;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+.banner{
+    height: 9rem;
+    background-image:url("banner1.jpg");
+    background-size: contain;
+    background-repeat:repeat;
+    display: flex;
+    position: relative;
+    justify-content:flex-end;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+}
+.icons{
+    display: flex;
+    flex-direction:column;
+    border: 1px solid black;
+    height: 25rem;
+    width: 25rem;
+    resize: both;
+}
+.hero-section{
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    
+    gap: 5px;
+    margin:4rem auto ;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+.faded-text{
+    user-select: none;
+    font-size: 7rem;
+    color: rgb(231, 235, 238);
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+}
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.hero-section-right{
+    position: relative;
+    justify-content: center;
+    align-items: center
+}
+.absolute{
+    position: absolute;
+}
+
+.subheading{
+    font-size: 2rem;
+    color: #343d68;
+    font-weight: 500;
+}
+.role{
+    color: blueviolet;
+    font-weight: 800;
+}
+
+/* Apply default styles to all anchor tags */
+a {
+    color: rgb(255, 255, 255); /* Change this to the color you prefer */
+    text-decoration: none; /* Remove underline if desired */
+    font-size:xx-large;
+    font-weight: bold;
+    font-family:monospace;
+
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+/* Apply styles to anchor tags on hover */
+a:hover {
+    color:rgb(84, 83, 131); /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover if desired */
+    transition-delay: 0.1s;
+}
+#button-box{
+    background-color: red;
+    color: red; /* Optional: To make the text color white for better contrast */
+    border: none; /* Optional: To remove the default border */
+    padding: 10px 20px; /* Optional: To add some padding for better appearance */
+    font-size: 16px; /* Optional: To increase the font size */
+     /* Optional: To add rounded corners */
+    cursor: pointer; /* Optional: To change the cursor to a pointer when hovering */
+    transition: background-color 0.3s; /* Optional: To add a transition effect */
+}
+.btn {
+    background-color: #e84949;
+    width: fit-content;
+    color: white;
+    padding: 0.4rem 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  .btn::before{
+    content: " ";
+    position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.4s ease;
+  }
+  
+  .btn:hover{
+    color: #e84949; 
+  }
+  .btn:hover::before{
+    transform: scaleX(1);
+    border-radius: 5px;
+  }
+  .btn:hover::after{
+    content: "😊";
+  }
